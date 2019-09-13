@@ -1,24 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TSTAR-PRO-Bold.otf">
+            <string>TSTARPRO-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8A-9u-DkB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhY-ln-UOv">
+                                        <rect key="frame" x="20" y="20" width="86" height="14"/>
+                                        <fontDescription key="fontDescription" name="TSTARPRO-Bold" family="TSTAR PRO" pointSize="14"/>
+                                        <color key="textColor" red="0.80784313730000001" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLu-Jx-cRH" customClass="Calender" customModule="Calender" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="54" width="354" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Available Time slots" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN5-kO-Ojg">
+                                        <rect key="frame" x="20" y="344" width="119" height="14"/>
+                                        <fontDescription key="fontDescription" name="TSTARPRO-Bold" family="TSTAR PRO" pointSize="14"/>
+                                        <color key="textColor" red="0.80784313730000001" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="isn-cq-sww">
+                                        <rect key="frame" x="20" y="379" width="374" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dct-pK-v3P">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hRL-7V-jkg">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </view>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="8bC-Xf-vdC" id="DqQ-Xc-1yM"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="DCK-3u-4SZ"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.019607843140000001" green="0.10980392160000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dLu-Jx-cRH" firstAttribute="leading" secondItem="j8A-9u-DkB" secondAttribute="leading" constant="30" id="47H-LE-h4H"/>
+                                    <constraint firstAttribute="trailing" secondItem="dLu-Jx-cRH" secondAttribute="trailing" constant="30" id="AqV-Fy-Tai"/>
+                                    <constraint firstItem="ZN5-kO-Ojg" firstAttribute="top" secondItem="dLu-Jx-cRH" secondAttribute="bottom" constant="40" id="TIC-gd-OKK"/>
+                                    <constraint firstAttribute="trailing" secondItem="isn-cq-sww" secondAttribute="trailing" constant="20" id="WPC-f6-qyV"/>
+                                    <constraint firstItem="RhY-ln-UOv" firstAttribute="leading" secondItem="j8A-9u-DkB" secondAttribute="leading" constant="20" id="cXY-RV-iJV"/>
+                                    <constraint firstItem="isn-cq-sww" firstAttribute="leading" secondItem="j8A-9u-DkB" secondAttribute="leading" constant="20" id="enx-Fi-egX"/>
+                                    <constraint firstItem="ZN5-kO-Ojg" firstAttribute="leading" secondItem="j8A-9u-DkB" secondAttribute="leading" constant="20" id="kfR-Yr-5kh"/>
+                                    <constraint firstItem="dLu-Jx-cRH" firstAttribute="top" secondItem="RhY-ln-UOv" secondAttribute="bottom" constant="20" id="mov-4a-Fkm"/>
+                                    <constraint firstItem="isn-cq-sww" firstAttribute="top" secondItem="ZN5-kO-Ojg" secondAttribute="bottom" constant="10" id="qwo-m7-A9h"/>
+                                    <constraint firstItem="RhY-ln-UOv" firstAttribute="top" secondItem="j8A-9u-DkB" secondAttribute="top" constant="20" id="t6D-wR-i6c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.019607843140000001" green="0.10980392160000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j8A-9u-DkB" secondAttribute="bottom" id="CU0-B4-kTF"/>
+                            <constraint firstItem="j8A-9u-DkB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NUc-2S-UoO"/>
+                            <constraint firstItem="j8A-9u-DkB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RwN-Ew-w0K"/>
+                            <constraint firstItem="j8A-9u-DkB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zkc-Ws-Pef"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="calender" destination="dLu-Jx-cRH" id="Tpf-Gx-WBL"/>
+                        <outlet property="slotsCollectionView" destination="isn-cq-sww" id="Ik0-9W-JEM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
     </scenes>
 </document>
