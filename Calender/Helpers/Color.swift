@@ -2,7 +2,7 @@
 //  Color.swift
 //  Core
 //
-//  Created by Ibrahim on 5/28/19.
+//  Created by Sally on 9/13/19.
 //  Copyright © 2019 Sally Freelance. All rights reserved.
 //
 

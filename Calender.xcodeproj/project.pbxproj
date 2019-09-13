@@ -24,6 +24,8 @@
 		F21CAA09232AECC10055FEC6 /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CAA08232AECC10055FEC6 /* Calender.swift */; };
 		F21CAA0F232BC1540055FEC6 /* SlotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CAA0D232BC1540055FEC6 /* SlotCell.swift */; };
 		F21CAA10232BC1540055FEC6 /* SlotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21CAA0E232BC1540055FEC6 /* SlotCell.xib */; };
+		F21CAA12232C1B390055FEC6 /* AllCalenderWithSlots.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CAA11232C1B390055FEC6 /* AllCalenderWithSlots.swift */; };
+		F21CAA15232C1B7D0055FEC6 /* AllCalenderWithSlots.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21CAA14232C1B7D0055FEC6 /* AllCalenderWithSlots.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		F21CAA08232AECC10055FEC6 /* Calender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
 		F21CAA0D232BC1540055FEC6 /* SlotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotCell.swift; sourceTree = "<group>"; };
 		F21CAA0E232BC1540055FEC6 /* SlotCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlotCell.xib; sourceTree = "<group>"; };
+		F21CAA11232C1B390055FEC6 /* AllCalenderWithSlots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCalenderWithSlots.swift; sourceTree = "<group>"; };
+		F21CAA14232C1B7D0055FEC6 /* AllCalenderWithSlots.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCalenderWithSlots.xib; sourceTree = "<group>"; };
 		F9D75AEAD655170430B8A504 /* Pods-Calender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calender.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calender/Pods-Calender.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +104,7 @@
 		F21CA9DB232AD8B60055FEC6 /* Calender */ = {
 			isa = PBXGroup;
 			children = (
+				F21CAA13232C1B440055FEC6 /* AllCalenderWithSlots */,
 				F21CAA0C232BB2D00055FEC6 /* CalenderView */,
 				F21CAA0B232BB2B10055FEC6 /* SlotsCell */,
 				F21CAA0A232BB2890055FEC6 /* CalenderCell */,
@@ -159,6 +164,15 @@
 				F21CAA08232AECC10055FEC6 /* Calender.swift */,
 			);
 			path = CalenderView;
+			sourceTree = "<group>";
+		};
+		F21CAA13232C1B440055FEC6 /* AllCalenderWithSlots */ = {
+			isa = PBXGroup;
+			children = (
+				F21CAA11232C1B390055FEC6 /* AllCalenderWithSlots.swift */,
+				F21CAA14232C1B7D0055FEC6 /* AllCalenderWithSlots.xib */,
+			);
+			path = AllCalenderWithSlots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +240,7 @@
 				F21CA9FC232AE4810055FEC6 /* TSTAR-PRO-Regular.otf in Resources */,
 				F21CA9E7232AD8B80055FEC6 /* LaunchScreen.storyboard in Resources */,
 				F21CA9E4232AD8B80055FEC6 /* Assets.xcassets in Resources */,
+				F21CAA15232C1B7D0055FEC6 /* AllCalenderWithSlots.xib in Resources */,
 				F21CA9F2232AE3840055FEC6 /* CalenderCellView.xib in Resources */,
 				F21CA9F4232AE3840055FEC6 /* Calender.xib in Resources */,
 				F21CAA10232BC1540055FEC6 /* SlotCell.xib in Resources */,
@@ -292,6 +307,7 @@
 				F21CA9DD232AD8B60055FEC6 /* AppDelegate.swift in Sources */,
 				F21CA9FF232AE4DB0055FEC6 /* Color.swift in Sources */,
 				F21CA9F3232AE3840055FEC6 /* CalenderCellView.swift in Sources */,
+				F21CAA12232C1B390055FEC6 /* AllCalenderWithSlots.swift in Sources */,
 				F21CAA0F232BC1540055FEC6 /* SlotCell.swift in Sources */,
 				F21CAA09232AECC10055FEC6 /* Calender.swift in Sources */,
 			);
