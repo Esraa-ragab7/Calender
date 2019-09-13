@@ -38,6 +38,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        slotsCollectionView.dataSource = self
+        slotsCollectionView.delegate = self
         configureCollectionView()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy MM dd"
