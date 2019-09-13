@@ -10,9 +10,11 @@ import UIKit
 
 class SlotCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var slotText: UILabel!
+    @IBOutlet weak var slotView: UIView!
+    
+    func displayContent(text: String) {
+        slotText.text = text
     }
 
 }

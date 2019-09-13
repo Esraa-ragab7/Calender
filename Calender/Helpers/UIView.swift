@@ -2,7 +2,7 @@
 //  uiViewExtention.swift
 //  ios-patient-app
 //
-//  Created by Esraa Mohamed Ragab on 10/25/18.
+//  Created by Sally on 10/25/18.
 //  Copyright © 2019 Sally Freelance. All rights reserved.
 //
 
